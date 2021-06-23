@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<body>
+    <h1>tfa-assignment-1</h1>
+<!-- 1) What is HTML? Explain the following HTML elements using an appropriate example
+other than covered in the class :
+● <table>
+● <ol> & <ul>
+● <form>, <input> and <label>
+● Self-Ending
+
+Ans: HTML is a markup language that defines the structure of your content.For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.
+HTML is not considered a programming language as it can’t create dynamic functionality. Instead, with HTML, web users can create and structure sections, paragraphs, and links using elements, tags, and attributes. 
+
+
+● <table>
+Ans: An HTML table is defined with the “table” tag. Each table row is defined with the “tr” tag. A table header is defined with the “th” tag. By default, table headings are bold and centered. A table data/cell is defined with the “td” tag. Table is inline element.
+
+Example: -->
+  
+    <table style="width:30%">
+        <p><strong>Q. 1)(i)Table tag example:</strong><p>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>SKills</th>
+            <th>Education</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Sanket</td>
+            <td>Bhagat</td>
+            <td>20</td>
+            <td>BE</td>
+            <td>Java</td>
+            <td>Mumbai</td>
+        </tr>
+        <tr>
+            <td>Anil</td>
+            <td>Singh</td>
+            <td>22</td>
+            <td>BSC</td>
+            <td>Angular.js</td>
+            <td>Delhi</td>
+        </tr>
+        <tr>
+            <td>Sanjay</td>
+            <td>Rathod</td>
+            <td>30</td>
+            <td>BCA</td>
+            <td>Python</td>
+            <td>Pune</td>
+        </tr>
+    </table> <hr>
+  
+<!-- ● <ol> & <ul>
+Ans:
+<ol> stands for Ordered List which can be either numerical or alphabetical and attributes are START and TYPE. 
+<ul>stands for Unordered List which can be either disc, square or circle. It s attributes are TYPE. <ol> and <ul> is a block kevel element. -->
+    <p><strong>(ii) ol & ul tag example:</strong><p></p>
+    <p>Tomorrow I will</p>
+    <ol start="2" type="1">
+        <li>Wake up</li>
+        <li>Have breakfast</li>
+        <li>Go to sleep</li>
+    </ol>
+
+    <p>Programming languages</p>
+    <ul type="square">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Java Script</li>
+    </ul> <hr>
+
+    <!-- ● <form>, <input> and <label>
+        Ans:
+        Form is block level element. Input and label is a Inline Element. 
+        An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+        action attribute used for processes the form submission.
+        
+        The <input> tag specifies an input field where the user can enter data.
+        <label> tag to define labels for <input> tag. -->
+    <p><strong>(iii) form, input and label tag example:</strong><p></p>
+
+    <form action="#">
+
+        <label>Enter your College Name:</label><br>
+        <input type="text"><br><br>
+
+        <label>Enter your Branch</label><br>
+        <input type="text"><br><br>
+
+        <input type="submit" value="Submit">
+    </form><hr>
+
+    <!-- ● Self-Ending
+    Ans: Self closing tags in HTML are those tags which don't have end tag.
+    Some of self closing tags in HTML5 I know are:
+    1. <img> for adding Image.
+    2. <br> for line break
+    3. <input /> for horizontal line.
+    4. <hr> for input field. -->
+    <p><strong>(iv) img, br, input, hr tag example:</strong><p></p>
+
+    <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_960_720.jpg" alt="Flower Image" height="120px" width="120px">
+    <br>
+    <input type="button" value="Button">
+    <hr>
+
+  <!-- Q. 2 - Let’s assume I want to build a website which contains/shows HTML codes to the client.   
+  (Please take https://www.internetingishard.com/html-and-css/basic-web-pages/ as an reference)
+   Write a HTML document code which displays ‘My Document’ as a document heading. -->
+
+   <p><strong>Q. 2 HTML document code which displays ‘My Document’ as a document heading:</strong><p></p>
+    <head>
+        <title>My Document</title>
+    </head>
+
+        <center>
+        <hr size="3" noshade>
+        <h1>The Adventures of Sherlock Holmes</h1>
+        <h2>by</h2>
+        <h3>Arthur Conan Doyle</h3>
+        <hr size="3" noshade>
+        </center><hr>
+
+ <!-- Q. 4 - Describe the various HTML Elements required to embed the video in an document and
+further explain the following HTML attributes :
+● video   - video element is used to show a video on a web page.
+● controls- for play a video.
+● src     - Specifies the path to the image/video.
+● poster  - The poster attribute specifies an image to be shown while the video is downloading, or until the user hits the play button. If this is not included, the first frame of the video will be used instead.
+● width   - Specifies the width of an image/video.
+● height  - Specifies the height of an image/video. -->
+<p><strong>Q.4 Explain the video HTML attributes:</strong><p></p>
+<video src="/video/BirdNoSound.mp4" controls width="500px" height="400px" poster="/images/bird.jpg"></video><hr>
+
+
+<!-- Q. 5 - What do you mean by HTML Attributes? Explain the importance of HTML Attributes in
+terms of functionalities. Write a HTML document code explaining the various HTML attributes --> 
+<!-- Ans: In HTML, attributes can be applied to basically any element. They modify the default behavior of the element or specify certain characteristics 
+● alt        - Alternative text in case an image can't be displayed
+● action     - The URI of a program that processes the information submitted via the form.
+● controls   - Indicates whether the browser should show playback controls to the user.
+● href       - The URL of a linked resource.
+● poster     - specifies an image to be shown while the video is downloading, or until the user hits the play button. If this is not included, the first frame of the video will be used instead.
+● src        - The URL of the embeddable content.
+● start      - Defines the first number if other than 1.
+● target     - For Opening Wesite in a new tab.
+● type       - Defines the type of the element.
+● value      - Defines a default value which will be displayed
+● width      - Specifies the width of an image/video.
+● height     - Specifies the height of an image/video.
+● placeholder- Provides a hint to the user of what can be entered in the field.
+● for        - Describes elements which belongs to this one. -->
+
+<p><strong>Q.5 Write a HTML document code explaining the various HTML attributes</strong><p></p>
+
+<img src="/images/nature.jpg " alt="Nature image" width="300px" height="150px"><br><br>
+<label>Enter a phone number:</label><br><br>
+<form action="#"></form>
+<input type="text" for=Mobileno. placeholder="123-45-678"><br><br>
+<a href="https://github.com/" target="_blank">click here to access Github</a>
+<h4>List of teams for World Cup</h4>
+<ol start="1" type="i">
+    <li>India</li>
+    <li>Australia</li>
+    <li>South Africa</li>
+    <li>New Zealand</li>
+    <li>Pakistan</li>
+    <li>Srilanka</li>
+    <li>West Indies</li>
+    <li>Bangladesh</li>
+</ol>
+<video src="/video/puppy_dog_pet_canine_white_sitting_1064.mp4" controls height="400px" width="500px" poster="/images/puppy.jpg"></video><br><br>
+<input type="button" value="Submit">
+
+
+</form>
+</body>
+</html>
